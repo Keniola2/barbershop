@@ -1,0 +1,906 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    /* border: solid 1px blue; */
+    
+}
+h1,h2,h3{
+font-family:'Poppins',sans-serif;
+font-weight: 500;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+}
+.head{
+    height: 100vh;
+    background-image: url('./img/nathon-oski-fE42nRlBcG8-unsplash.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.container .main-container{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.container .intro-container{
+    height: 100vh;
+    position: relative;
+}
+.main-container .navigation{
+    height: 25%;
+}
+.main-container .navigation nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation nav .menu{
+   position: absolute;
+   top: 2px;
+   display: none;
+   flex-direction: column-reverse;
+   width: 100%;
+   justify-content: space-between;
+   height: 100%;
+   z-index: 2;
+   background-color: #000;
+ 
+}
+.menu .close {
+    margin-top: 10px;
+    width: 100px;
+    margin-left: 5px;
+    height: 60px;
+    cursor: pointer;
+
+}
+
+nav .menu ul{
+   margin-top: 10px;
+   width: 100%;
+   height: 90%;
+   
+}
+
+.menu ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+.menu ul li:hover{
+    margin-left: 10px;
+    border: solid 1px white;
+    transition: all 5ms;
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.navigation nav .grid{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/* ===========end of menu========== */
+.main-container .intro{
+    display: flex;
+    height: 75%;
+    position: relative;
+   
+}
+.intro .intro-text {
+    width: 70%;
+    margin-top: 60px;
+   
+}
+.intro-text h1{
+    color: #fff;
+    font-size: 75px;
+    padding-top: 40px;
+}
+.intro-text p{
+    width: 60%;
+    margin-top: 30px;
+    color: #fff;
+}
+.intro-text button{
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.intro-text button a{
+    color: #000;
+    text-decoration: none;
+}
+.main-container .intro .arrow{
+    width: 40%;
+    position: relative;
+
+}
+.intro .arrow .arrow-container{
+   position: absolute;
+   bottom: 0%;
+   right: 1px;
+   transform: rotate(270deg);
+   animation: arrow 2s ease-in-out  infinite alternate ;
+   cursor: pointer;
+}
+@keyframes arrow {
+    from{
+        bottom: 10%;
+    }
+    to{
+        bottom: 0%;
+    }
+    
+}
+.intro .arrow h3 {
+    color: #fff;
+}
+.intro .arrow img{
+   transform: rotate(90deg);
+}
+/* =============about us=========== */
+.main-container .about{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 170vh;
+    box-sizing: border-box;
+}
+.about .one{
+    grid-column:1/3;
+}
+.about .one h1{
+    font-size: 85px;
+    padding-bottom: 20px;
+}
+.about .two{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-image: url('./img/eye-speak-8MpCPbGoXgY-unsplash.jpg');
+    background-size: cover;
+
+}
+.about .three{
+    grid-column: 2/1;
+    grid-row: 3/4;
+}
+.about .four{
+    grid-row: 2/3;
+    background-image: url('./img/black5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    
+}
+.about .five{
+    grid-row: 2/4;
+    background-image: url('./img/stefan-schauberger-Tper6bHeSUo-unsplash.jpg');
+    background-position-x: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about .six button{
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #000;
+}
+.six button a{
+    text-decoration: none;
+    
+}
+.six button:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+
+/* ============end of about================ */
+.barber-container{
+    height: 100vh;
+}
+.barber-container .main-container{
+    margin-top: 40px;
+}
+.barber-container .main-container h1{
+    font-size: 80px;
+    padding-bottom: 50px;
+}
+.main-container .barbers {
+    display: flex;
+    justify-content: space-between;
+}
+.barbers .barbers-bio .barber-pic-one,.barbers .barbers-bio .barber-pic-two,.barbers .barbers-bio .barber-pic-three{
+    height: 400px;
+    width: 350px;
+}
+
+.barbers-bio h3{
+    margin-top: 5px;
+}
+.barbers-bio .barber-pic-one{
+    background-image: url('./img/andre-reis\ black.jpg');
+    background-position:center ;
+    background-size: cover;
+    background-position-y:top ;
+}
+.barbers-bio .barber-pic-two{
+    background-image: url('./img/pexels-ej-agumbay-black.jpg');
+    background-position:center ;
+    background-size: cover;
+    background-position-y:top ;
+}
+.barbers-bio .barber-pic-three{
+    background-image: url('./img/barber\ shop\ img\ black&white.jpg');
+    background-position:center ;
+    background-size: cover;
+    background-position-y:top ;
+}
+/* =======end of barbers bio=========== */
+.benefit-container{
+    height: 100vh;
+}
+.benefit-container h1{
+    font-size: 80px;
+}
+.benefit-container .benefits{
+    height: 70%;
+    background-image: url('./img/stefan-schauberger-Tper6bHeSUo-unsplash.jpg');
+    background-position:center ;
+    background-size: cover;
+    background-position-y:top ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.benefits .benefits-main-container{
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px;
+}
+.benefits-main-container .benefit-one,.benefits-main-container .benefit-two,.benefits-main-container .benefit-three,
+.benefits-main-container .benefit-four,.benefits-main-container .benefit-five,.benefits-main-container .benefit-six{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.benefits-main-container .benefit-one{
+    border-right: solid 1px white;
+    border-bottom: solid 1px white;
+}
+.benefits-main-container .benefit-four{
+    border-right: solid 1px white;
+}
+.benefits-main-container .benefit-two{
+    border-bottom: solid 1px white;
+    border-right: solid 1px white; 
+}
+.benefits-main-container .benefit-three{
+    border-bottom: solid 1px white;  
+}
+.benefits-main-container .benefit-five{
+    border-right: solid 1px white;
+}
+/* ==========prices================= */
+.price-container{
+    height: 100vh;
+  
+}
+.price-container h1{
+    font-size: 80px;
+}
+.price-container .price-main-container{
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+}
+.price-main-container .price{
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr;
+    
+}
+.price .service{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+} 
+.service h3{
+    font-weight: 700;
+}
+.price .service-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left:solid 1px #000;
+    height: 80%;
+    margin-top: 10px;
+}
+.service-details p{
+  margin-left: 10px;
+}
+.price .pic {
+    height: 90%;
+}
+.price .shaving{
+    background-image: url('./img/arthur-humeau-Twd3yaqA2NM-unsplash.jpg');
+    background-position:center ;
+    background-size: cover;
+}
+.price .haircut{
+    background-image: url('./img/black\ 3.jpg');
+    background-position:center ;
+    background-size: cover;
+}
+.price .styling{
+    background-image: url('./img/edwin\ black.jpg');
+    background-position:center ;
+    background-size: cover;
+}
+.price .grooming{
+    background-image: url('./img/alex-mihai-black.jpg');
+    background-position-y:bottom;
+    background-size: cover;
+}
+/* ===============end of price=================== */
+
+.container .book-online{
+    height: 100vh;
+}
+.book-online h1{
+    font-size: 85px;
+}
+.book-online .book-online-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   height: 80%;
+}
+.book-online-container .book-online-details{
+    display: flex;
+    flex-direction: column;
+}
+.book-online-details .top-content{
+    width: 90%;
+    padding-bottom: 50px;
+}
+.book-online-details input,.book-online-details select,.book-online-details button{
+    display: block;
+    width: 90%;
+    height: 40px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.book-online-details button{
+    background: #000;
+    color: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.book-online-details button:hover{
+    background: #fff;
+    color: #000;
+}
+.book-online-container .book-online-img{
+    position: relative;
+}
+.book-online-container .book-online-img .img-one,.book-online-container .book-online-img .img-two{
+    width: 250px;
+    height: 250px;
+    
+}
+.book-online-img .img-one{
+    background-image:url('./img/black5.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.book-online-img .img-two{
+    background-image:url('./img/delfina-pan\ black.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: absolute;
+    bottom: 90px;
+    right: 150px;
+    border: solid 15px white;
+}
+.container .gallery{
+    height: 100vh;
+}
+.container .gallery h1{
+    font-size: 85px;
+}
+.container .gallery-container{
+    height: 80%;
+}
+.gallery-container .gallery-top{
+    height: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.gallery-top .gallery-img1{
+    grid-row: 1/3;
+    grid-column: 1/3;
+    background-image: url("./img/allef\ black.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: top;
+}
+
+.gallery-top .gallery-img2{
+    background-image: url('./img/hannes-wolf-SL5COy-RhCQ-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-top .gallery-img3{
+    background-image: url('./img/black\ 3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-container .gallery-bottom{
+    margin-top: 10px;
+    height: 40%;
+    display: grid;
+    grid-template-columns: 400px 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+.gallery-bottom .gallery-img4{
+    background-image: url('./img/hair-spies-8REEzs_u--Y-unsplash2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-bottom .gallery-img5{
+    background-image: url('./img/edwin\ black.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-bottom .gallery-img6{
+    background-image: url('./img/jose-pinto-black.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ============= reviews ================ */
+.reviews{
+  height: 100vh;
+}
+.container .reviews h1{
+    font-size: 85px;
+    padding-bottom: 15px;
+}
+.reviews .reviews-container{
+    display: flex;
+    flex-direction: column;
+}
+.reviews-container .review{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    border-bottom: solid 2px grey;
+    justify-content: space-between;
+    padding: 5px;
+   
+}
+.review .review-profile{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  
+}
+.review .review-img1{
+    height: 100px;
+    width: 100px;
+    background-image: url('./img/pexels-hass-ftouni-15704443.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.review .review-img2{
+    height: 100px;
+    width: 100px;
+    background-image: url('./img/blanche-peulot-cILMIOvc3QY-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.review .review-img3{
+    height: 100px;
+    width: 100px;
+    background-image: url('./img/hannes-wolf-SL5COy-RhCQ-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+.review .review-comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviews-container .review:last-child{
+    border-bottom: none;
+}
+/* ==============location============ */
+.location{
+    height: 100vh;
+}
+.location h1{
+    font-size: 85px;
+}
+.location .location-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 10px;
+    height: 70%;
+}
+
+.location-container .map{
+    grid-column: 1/4;
+}
+.location-container .location-img1{
+    background-image: url('./img/pexels-josh-sorenson-black.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.location-container .location-img2{
+    background-image: url('./img/stefan-schauberger-nu6qqfAEVN4-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.location-container .location-img3{
+    background-image: url('./img/nathon-oski-black.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.location div{
+    margin-top: 10px;
+}
+/* =========contact========== */
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.contacts .contact-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-header h1{
+    font-size: 85px;
+}
+.contacts .contact-body{
+  display: flex;
+  flex-direction: column;
+}
+.contact-body .contact-details{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.contact-body .contact-time{
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-body .social-links{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+}
+.contact-address p:first-child,.contact-time p:first-child,.social-links p:first-child{
+    font-weight: bold;
+}
+.contact-body .footer-nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+.footer-nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.contacts .contact-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* ================= media query============ */
+@media screen and (max-width:700px) {
+    /* *{
+        border: solid 1px red;
+    } */
+  .container{
+    width: 100%;
+  }  
+ .container .main-container{
+    width: 90%;
+  }
+ 
+  .intro-container .navigation{
+    height: 20%;
+  }
+ .intro-container .navigation .logo img{
+    width: 150px;
+ }
+ .main-container .intro{
+    flex-direction: column;
+ }
+ .intro .intro-text{
+    margin-top: 0px;
+    width: 100%;
+   
+ }
+ .intro-text h1{
+    font-size: 40px;
+ }
+ .intro-text p{
+    width: 100%;
+ }
+ .main-container .intro .arrow{
+    width: 100%;
+    position: relative;
+   
+ }
+ .intro .arrow .arrow-container{
+    position: relative;
+    transform: rotate(180deg);
+    animation: none;
+ }
+ .arrow .arrow-container h3{
+    display: none;
+ }
+ .arrow .arrow-container img{
+    transform: rotate(180deg);
+ }
+ .main-container .about{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+
+ }
+ .about .one,.about .three,.about .four,.about .five{
+    height: 400px;
+ }
+ .about .two{
+    height: 800px;
+ }
+ .about .five{
+    display: none;
+ }
+ .about .one h1{
+    font-size: 40px;
+ } 
+ .barber-container{
+    height: 165vh;
+ }
+.barber-container .main-container h1{
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+.main-container .barbers{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.barbers .barbers-bio .barber-pic-one,.barbers .barbers-bio .barber-pic-two,.barbers .barbers-bio .barber-pic-three{
+    height: 300px;
+    width: 350px;
+}
+
+.benefit-container h1{
+    font-size: 40px;
+}
+.benefit-container .benefits{
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+.benefits .benefits-main-container{
+    width: 100%;
+    margin:none;
+    display: flex;
+    flex-direction: column;
+    background: #141313;
+    opacity: 0.7;
+    height: 100%;
+}
+.benefits-main-container .benefit-one,.benefits-main-container .benefit-two,.benefits-main-container .benefit-three,.benefits-main-container .benefit-four,.benefits-main-container .benefit-five,.benefits-main-container .benefit-six{
+    height: 70px;
+    border-bottom: solid 1px white;
+    color: white;
+}
+.price-container h1{
+    font-size: 40px;
+}
+.price-main-container .price{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+.price-main-container .price .service-details{
+    display: none;
+}
+.price-main-container .price .service{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.book-online h1{
+    font-size: 40px;
+}
+.book-online .book-online-container{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    /* padding-bottom: 30px; */
+}
+.book-online-container .book-online-details{
+    background-image:url('./img/black5.jpg') ;
+    background-size: cover;
+    background-position: center;
+    color: white;
+   width: 100%;
+   padding: 5px;
+   padding-left: 10px;
+}
+.book-online-details .top-content{
+    padding-top: 10px;
+}
+.book-online-details p{
+    padding-bottom: 30px;
+}
+.book-online .book-online-container .book-online-img{
+    display: none;
+}
+.container .gallery h1{
+    font-size: 40px;
+}
+.gallery-container .gallery-bottom{
+    grid-template-columns: 2fr 1fr 1fr;
+}
+.reviews{
+    height: 130vh;
+}
+.container .reviews h1{
+    font-size: 40px;
+}
+.reviews-container .review{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+/* .container .location h1{
+    font-size: 40;
+    color: red;
+} */
+.contact-header h1{
+    font-size: 40px;
+}
+.contact-header img{
+    height: 100px;
+    width: 100px;
+}
+.contact-body .footer-nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
