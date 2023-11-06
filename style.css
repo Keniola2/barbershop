@@ -837,10 +837,10 @@ nav .menu ul{
     justify-content: space-between;
 
 }
-/* .container .location h1{
-    font-size: 40;
-    color: red;
-} */
+.container .location h1{
+    font-size: 40px;
+    
+}
 .contact-header h1{
     font-size: 40px;
 }
